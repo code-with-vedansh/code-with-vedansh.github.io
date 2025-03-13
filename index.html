@@ -1,80 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Course On Youtube</title>
+    <title>Code with Vedansh</title>
     <style>
-        .title {
-            margin-left: 20px;
-            margin-right: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .left-half {
+            width: 50%;
+            background: url('coder.jpg') center/cover no-repeat;
+        }
+        .right-half {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            text-decoration: solid;
-            font-family: poppins;
         }
-
-        .course {
-            padding-top: 100px;
-            padding-right: 30px;
-            text-align: right;
-            font-family: poppins;
-            text-decoration: none;
-
+        h1 {
+            margin-bottom: 20px;
         }
-
-        a:-webkit-any-link {
-            color: black;
-            cursor: pointer;
-            text-decoration: none;
+        .links {
+            display: flex;
+            gap: 20px;
         }
-
-        a:hover {
-            color: black;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        .course-code {
-            padding-top: 20px;
-            padding-bottom: 10px;
-            padding-right: 30px;
-            text-align: right;
-            font-family: poppins;
-            text-decoration: none;
-
-        }
-        
-        .course img{
-            text-align: right;
+        .links a img {
             width: 50px;
-            background-position-y: 50px;    
+            height: 50px;
+            transition: transform 0.3s;
         }
-
-        .course-code img{
-            text-align: right;
-            width: 50px;
-            background-position-y: 50px;    
+        .links a img:hover {
+            transform: scale(1.2);
         }
-
     </style>
 </head>
-
 <body>
-    <div class="title" style="margin-left: 950px; border: 5px solid black; width: 500px;border-radius: 25px;">
-        <h1>My Python Course</h1>
-    </div>
-
-    <div class="course">
-        <img align="right" src="/Youtube.png" alt="Youtube"  >
-        <a href="https://www.youtube.com/playlist?list=PLqSlHDhgWUDh3elR721BETZUhzDX-viEB"; style="padding: 10px; border: 5px solid black;border-radius: 25px; target="_blank";">Youtube Course</a>
-    </div>
-    
-    <div class="course-code">
-        <img align="right" src="/Github.png" alt="Github"  >
-        <a href="https://github.com/VED-CODER-KING/Python-Course-For-Beginners"; style="padding: 10px; border: 5px solid black;border-radius: 25px; target="_blank";">Source Code</a>
-
+    <div class="left-half"></div>
+    <div class="right-half">
+        <h1>My Webpage</h1>
+        <div class="links">
+            <a href="https://www.youtube.com/playlist?list=PLqSlHDhgWUDh3elR721BETZUhzDX-viEB" target="_blank">
+                <img src="Youtube.png" alt="YouTube">
+            </a>
+            <a href="https://github.com/VED-CODER-KING/Python-Course-For-Beginners" target="_blank">
+                <img src="Github.png" alt="GitHub">
+            </a>
+        </div>
     </div>
 </body>
-
 </html>
